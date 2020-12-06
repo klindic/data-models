@@ -97,6 +97,7 @@ export interface Order {
     date: string;
     qrcode: string;
     pickupCode: string;
+    lastLocation: [number, number];
 }
 export enum OrderStatus {
     STAGING = 0,
