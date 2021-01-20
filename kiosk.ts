@@ -5,10 +5,14 @@
  * Written by Alec Chan <me@alecchan.io>, 2020
  */
 
-export type Kiosk = {
-    name: string;
-    addressLine1: string;
-    addressLine2?: string;
-    latLong: [number, number];
+export enum KioskStatus {
+    OK = 0,
+    NOT_OK
+}
+export interface KioskType {
+    latlong: number[];
     id: string;
+    name: string;
+    status: KioskStatus;
+    address: string;
 }

@@ -5,7 +5,7 @@
  * Written by Alec Chan <me@alecchan.io>, 2020
  */
 
- 
+
 /**
  * These are the interfaces used to model a fully customizable drink building system.
  * The prices here on the client are just used to show the user an estimate
@@ -67,7 +67,7 @@ export enum DrinkStatus {
     DONE
 }
 
-export class FeaturedDrink {
+export interface FeaturedDrink {
     name: string;
     image: string;
     description: string;
@@ -75,17 +75,6 @@ export class FeaturedDrink {
     drink: Drink;
 }
 
-export enum KioskStatus {
-    OK = 0,
-    NOT_OK
-}
-export interface Kiosk {
-    latlong: number[];
-    id: string;
-    name: string;
-    status: KioskStatus;
-    address: string;
-}
 export interface Order {
     drinks: QuantifiedDrink[];
     id: string;
@@ -97,6 +86,8 @@ export interface Order {
     date: string;
     qrcode: string;
     pickupCode: string;
+    lastLocation: [number, number];
+    eta?: number;
 }
 export enum OrderStatus {
     STAGING = 0,
