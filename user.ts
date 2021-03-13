@@ -13,4 +13,5 @@ export interface UserModel {
     birthdate: string;
     image: string;
     stripeCustomerID: string;
+    fcmToken: string;
 }
