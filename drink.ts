@@ -83,11 +83,12 @@ export interface Order {
     totalPrice: number;
     kioskId: string;
     transportMode: string;
-    date: string;
+    date: number;
     qrcode: string;
     pickupCode: string;
     lastLocation: [number, number];
     eta?: number;
+    distance?: number;
 }
 export enum OrderStatus {
     STAGING = 0,
