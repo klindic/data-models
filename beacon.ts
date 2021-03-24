@@ -18,7 +18,7 @@ export type BeaconEvent = {
     type: BeaconEventType,
     beaconId: string;
     kioskId: string;
-};
+}
 
 export type KontaktSearchMeta = {
     filter: string;
@@ -29,7 +29,7 @@ export type KontaktSearchMeta = {
     orderBy: "CREATED";
     queryType: "NORMAL" | "COUNTED" | "SEARCH_META";
     order: "ASC" | "DESC";
-};
+}
 
 /**
  * Represents the response from the Kontakt GET /venue endpoint
@@ -37,7 +37,7 @@ export type KontaktSearchMeta = {
 export type KontaktVenueResponse = {
     searchMeta: KontaktSearchMeta;
     venues: KontaktVenue[];
-};
+}
 
 /**
  * Represents data about who a venue has been shared with.
@@ -46,14 +46,14 @@ export type KontaktShareData = {
     managerMail: string;
     access: "VIEWER" | "EDITOR";
     expirationDate: number;
-};
+}
 
 /**
  * Venue metadata for connecting kontakt venues with our kiosks
  */
 export type KontaktVenueMeta = {
     kioskId: string;
-};
+}
 
 /**
  * Data about a venue in Kontakt Cloud.
@@ -69,7 +69,7 @@ export type KontaktVenue = {
     lat: number | null;
     lng: number | null;
     managerId: string;
-};
+}
 
 export type KontaktDeviceMeta = {};
 
@@ -173,7 +173,7 @@ export type KontaktDevice = {
     };
     eidInitialTimestamp: string;
     eidRotationPeriodExponent: number;
-};
+}
 
 export type KontaktDevicesResponse = {
     devices: KontaktDevice[];
@@ -190,4 +190,4 @@ export type KontaktDeviceStatus = {
 export type KontaktDeviceStatusResponse = {
     statuses: KontaktDeviceStatus[];
     searchMeta: KontaktSearchMeta;
-};
+}
