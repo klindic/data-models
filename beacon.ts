@@ -5,6 +5,7 @@ export interface Beacon {
     major: string;
     minor: string;
     name?: string;
+    priority: number;
     latlong: [number, number];
 }
 

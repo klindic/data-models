@@ -88,7 +88,7 @@ export interface Order {
     pickupCode: string;
     lastLocation: [number, number];
     eta?: number;
-    distance?: number;
+    priority?: number;
 }
 export enum OrderStatus {
     STAGING = 0,
