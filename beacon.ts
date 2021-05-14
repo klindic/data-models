@@ -17,7 +17,6 @@ export enum BeaconEventType {
 export type BeaconEvent = {
     type: BeaconEventType,
     beaconId: string;
-    kioskId: string;
     uid: string;
 }
 
