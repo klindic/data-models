@@ -19,6 +19,7 @@ export type BeaconEvent = {
     beaconId: string;
     kioskId?: string;
     uid: string;
+    time?: number;
 }
 
 export type KontaktSearchMeta = {
