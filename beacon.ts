@@ -21,6 +21,7 @@ export type BeaconEvent = {
     uid: string;
     time?: number;
     distance?: number;
+    proximity?: number;
 }
 
 export type KontaktSearchMeta = {
