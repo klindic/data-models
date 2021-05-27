@@ -24,6 +24,16 @@ export type BeaconEvent = {
     proximity?: number;
 }
 
+export type FilteredBeaconEvent = {
+    time: number;
+    uid: string;
+    beaconId: string;
+    kioskId?: string;
+    timeInterval: number;
+    avgDistance: number;
+    avgProximity: number;
+}
+
 export type KontaktSearchMeta = {
     filter: string;
     startIndex: number;
