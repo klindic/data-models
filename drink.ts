@@ -25,6 +25,7 @@ export interface DrinkType extends ICustomization {
     image: string;
     canHaveNoMilk: boolean;
     canHaveChocolate: boolean;
+    category: number;
     description?: string;
 }
 /** Drink Size */
@@ -73,4 +74,9 @@ export interface FeaturedDrink {
     description: string;
     id: string;
     drink: Drink;
+}
+
+export interface DrinkCategory {
+    id: number;
+    name: string;
 }
